@@ -1,1 +1,1 @@
-https://krystianklimczak.github.io/learningbydoing/
+https://krystianklimczak.github.io/goit-markup-hw-05/
