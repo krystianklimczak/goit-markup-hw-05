@@ -555,6 +555,7 @@ button {
     background-color: var(--color-text-main-light);
     box-shadow: var(--color-background-modal);
     border-radius: 4px;
+    transition: transform 1250ms;
 }
 .modal-close-btn {
     display: flex;
@@ -572,5 +573,9 @@ button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: scale(13) rotate(360deg) translate(-50%, -50%);
+    /* transform: scale(13) rotate(360deg) translate(-50%, -50%); */
+}
+.is-hidden .modal {
+    /* transform: rotate(360deg) translate(-50%, -50%) ; */
+    transform: scaleX(2) scaleY(2) scaleZ(-3) rotateX(360deg) rotateY(-360deg) rotateZ(360deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
 }
