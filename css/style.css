@@ -547,6 +547,7 @@ button {
     align-items: center;
     transition-property: visibility, opacity, transform;
     transition-duration: 1250ms;
+    cursor: not-allowed;
 }
 .modal {
     position: absolute;
@@ -556,6 +557,7 @@ button {
     box-shadow: var(--color-background-modal);
     border-radius: 4px;
     transition: transform 1250ms;
+    cursor: auto;
 }
 .modal-close-btn {
     display: flex;
