@@ -13,6 +13,8 @@
     --color-background-section-solution-op: rgba(47, 48, 58, 0.4);
     --color-icon-social: #afb1b8;
     --color-background-icon-footer: rgba(255, 255, 255, 0.1);
+    --trans-duration-tfunction: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --color-background-img-overlay: rgba(47, 48, 58, 0.8);
 }
 
 /* GLOBAL STYLES */
@@ -89,6 +91,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-text-main);
+    transition: color var(--trans-duration-tfunction);
 }
 .header-nav-item:is(:hover, :focus) {
     color: var(--color-hover);
@@ -108,6 +111,7 @@ button {
     align-items: center;
     gap: 10px;
     fill: var(--color-text-main-grey);
+    transition: color var(--trans-duration-tfunction), fill var(--trans-duration-tfunction);
 }
 .header-contact-link:is(:hover, :focus) {
     color: var(--color-hover);
@@ -157,6 +161,7 @@ button {
 .footer-addres-link {
     color: var(--color-text-main-light-op);
     width: fit-content;
+    transition: color var(--trans-duration-tfunction);
 }
 .footer-addres-link:is(:hover, :focus) {
     color: var(--color-hover);
@@ -191,6 +196,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color var(--trans-duration-tfunction);
 }
 .footer-social-box-img:is(:hover, :focus) {
     background-color: var(--color-hover);
@@ -234,7 +240,7 @@ button {
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: var(--color-text-main-light);
-    background: var(--color-hover);
+    background-color: var(--color-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-style: none;
@@ -286,6 +292,31 @@ button {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+.studio-job-container-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.studio-job-container-img-paragraph {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text-main-light);
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: var(--color-background-img-overlay);
+    width: 100%;
+    /* top: 0; */
+    /* right: 0;
+    left: 0;
+    bottom: 0; */
+
 }
 
 /* TEAM */
@@ -346,6 +377,8 @@ button {
     padding: 12px;
     border-radius: 50%;
     fill: var(--color-icon-social);
+    transition: fill var(--trans-duration-tfunction),
+        background-color var(--trans-duration-tfunction);
 }
 .studio-team-box-img-container-svg:is(:hover, :focus) {
     fill: var(--color-text-main-light);
@@ -375,6 +408,7 @@ button {
     border-radius: 4px;
     padding: 16px 32px;
     fill: var(--color-icon-social);
+    transition: fill var(--trans-duration-tfunction), border var(--trans-duration-tfunction);
 }
 .studio-clients-box-img:is(:hover, :focus) {
     fill: var(--color-hover);
@@ -401,11 +435,13 @@ button {
     border-style: none;
     padding: 6px 22px;
     color: var(--color-text-main);
-    background: var(--color-beckground-section-team);
+    background-color: var(--color-beckground-section-team);
+    transition: color var(--trans-duration-tfunction),
+        background-color var(--trans-duration-tfunction), box-shadow var(--trans-duration-tfunction);
 }
 .portfolio-filter-btn:is(:hover, :focus) {
     color: var(--color-text-main-light);
-    background: var(--color-hover);
+    background-color: var(--color-hover);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -417,6 +453,9 @@ button {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+.portfolio-projects-figure {
+    transition: box-shadow var(--trans-duration-tfunction);
 }
 .portfolio-projects-figure:is(:hover, :focus) {
     cursor: pointer;
