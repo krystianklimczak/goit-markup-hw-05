@@ -494,7 +494,7 @@ button {
     height: 100%;
     top: 0;
     left: 0;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform var(--trans-duration-tfunction);
 }
 .portfolio-projects-figure-overlay-description {
