@@ -558,6 +558,7 @@ button {
     box-shadow: var(--color-background-modal);
     border-radius: 4px;
     transition: transform 1250ms;
+    transform: scale(1) rotate(360deg);
     cursor: auto;
 }
 .modal-close-btn {
@@ -580,5 +581,6 @@ button {
 }
 .is-hidden .modal {
     /* transform: rotate(360deg) translate(-50%, -50%) ; */
-    transform: scaleX(2) scaleY(2) scaleZ(-3) rotateX(360deg) rotateY(-360deg) rotateZ(360deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    /* transform: scaleX(2) scaleY(2) scaleZ(-3) rotateX(360deg) rotateY(-360deg) rotateZ(360deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg); */
+    transform: scale(2);
 }
