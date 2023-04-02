@@ -284,7 +284,11 @@ button {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+}
+.studio-adventages-item {
+    width: 270px;
+height: 251px;
 }
 .studio-adventages-item-img {
     background-color: var(--color-beckground-section-team);
