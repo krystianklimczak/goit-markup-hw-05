@@ -64,8 +64,15 @@ button {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    /* gap: 371px; */
     /* padding-top: 24px;
     padding-bottom: 25px; */
+}
+.header-container-nav {
+    display: flex;
+    align-items: center;
+    gap: 93px;
 }
 
 .header-logo {
@@ -75,7 +82,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--color-hover);
-    margin-right: 93px;
+    /* margin-right: 93px; */
 }
 .header-logo-span {
     color: var(--color-text-main-black);
@@ -84,7 +91,7 @@ button {
     display: flex;
     align-items: center;
     gap: 46px;
-    margin-right: 371px;
+    /* margin-right: 371px; */
     /* position: relative; */
     /* padding-top: 32px;
     padding-bottom: 32px; */
