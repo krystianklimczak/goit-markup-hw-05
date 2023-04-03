@@ -60,6 +60,8 @@ button {
 /* HEADER */
 .header {
     border-bottom: 1px solid var(--color-line-header-bottom);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .header-container {
     display: flex;
@@ -93,8 +95,8 @@ button {
     gap: 46px;
     /* margin-right: 371px; */
     /* position: relative; */
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 }
 .header-nav-item {
     font-weight: 500;
